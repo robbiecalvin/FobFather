@@ -122,7 +122,8 @@ a:focus-visible, button:focus-visible, summary:focus-visible { outline: 3px soli
 .about-us-img { width: 100%; max-width: 800px; margin: 0 auto 30px; border: 6px solid #edf3fa; border-radius: 20px; box-shadow: var(--raised); }
 .testimonials-inner, .faq-inner { width: 90%; max-width: 900px; margin: auto; display: flex; flex-direction: column; align-items: center; }
 .testimonials-grid { display: flex; flex-direction: column; gap: 24px; width: 100%; margin: 0 0 32px; }
-.testimonial { padding: 28px; }
+.testimonial { padding: 28px; color: #000; }
+.testimonial cite { color: #000; }
 .review-form { display: none; margin: 32px auto 0; padding: 32px; width: 100%; max-width: 600px; }
 .review-form-inner { display: flex; flex-direction: column; gap: 16px; }
 .review-form-inner label, .form-row label { display: block; color: #193c65; font-weight: 600; margin-bottom: 6px; }
@@ -737,7 +738,7 @@ document.addEventListener("DOMContentLoaded", () => {
     block.classList.add("testimonial");
     block.style.cssText = `
       background-color: #005ad7b9;
-      color: #f7f7f7;
+      color: #000;
     
       border-radius: 12px;
       text-align: center;
@@ -747,7 +748,7 @@ document.addEventListener("DOMContentLoaded", () => {
     block.innerHTML = `
       <img src="5stars.png" alt="5 star rating" style="width:120px; margin-bottom:15px;">
       <p style="margin-bottom: 15px;">“${testimonial.body}”</p>
-      <cite style="display: block; font-style: normal; color: #f7f7f7; font-weight: bold;">— ${testimonial.name}</cite>
+      <cite style="display: block; font-style: normal; color: #000; font-weight: bold;">— ${testimonial.name}</cite>
     `;
 
     grid.appendChild(block);
