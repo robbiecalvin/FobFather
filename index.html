@@ -87,9 +87,10 @@ img { display: block; max-width: 100%; height: auto; object-fit: cover; margin-i
 .btn:hover, .review-btn:hover, .submit-btn:hover { transform: translateY(-3px); filter: brightness(1.08); }
 .btn:active, .review-btn:active, .submit-btn:active { transform: translateY(2px); box-shadow: inset 0 2px 5px #092e5b50, 0 2px 0 #16365c; }
 a:focus-visible, button:focus-visible, summary:focus-visible { outline: 3px solid #1374d5; outline-offset: 5px; }
-.hero { padding: 48px 0; background: radial-gradient(ellipse at 50% 0%, #e9f5ff65, transparent 65%); }
-.hero-media { max-width: 680px; margin: auto; padding: 24px; border-radius: 28px; background: linear-gradient(145deg, #ffffff32, #93bde51c); border: 1px solid #c3dfff80; box-shadow: inset 0 1px 0 #ffffffad, 0 24px 45px #08295355; }
-.hero-media img { filter: drop-shadow(0 8px 5px #061e3944); }
+.hero { padding: 48px 0; background: linear-gradient(180deg, #071d3b20, #071d3b55), url("vancouver-waterfront.png") center center / cover no-repeat; border-bottom: 1px solid #b7d7f9; }
+.hero-media { max-width: 360px; margin: auto; }
+.hero-media img { width: 100%; filter: drop-shadow(0 12px 18px #061e3980); }
+.site-footer .hero-media { max-width: 180px; }
 .mission-container { background: transparent; }
 .mission { width: 90%; max-width: 1000px; margin: auto; padding: 48px 0 64px; text-align: center; }
 .hero-title { font-size: clamp(30px, 4vw, 48px); color: #fff; text-shadow: 0 2px 0 #315b8b, 0 4px 0 #173e6d, 0 8px 18px #0c2b5866; }
@@ -160,7 +161,7 @@ input[type="checkbox"], input[type="radio"] { accent-color: #1c5ca6; }
   .site-header .header-inner { justify-content: center; gap: 10px; }
   .site-header .btn { padding: 10px 14px; font-size: 13px; }
   .hero { padding: 32px 0; }
-  .hero-media { padding: 16px; border-radius: 20px; }
+  .hero-media { max-width: 260px; }
   .mission { padding: 32px 0 40px; }
   .hero-sub { font-size: 17px; }
   .pricing, #services, .about-us, .testimonials, .contact, .faq { padding: 40px 0; }
@@ -196,7 +197,7 @@ input[type="checkbox"], input[type="radio"] { accent-color: #1c5ca6; }
       "description": "By appointment only"
     }
   ],
-  "logo": "fobfatherlogo.png",
+  "logo": "fobfather-logo-3d.png",
   "makesOffer": [
     {
       "@type": "Offer",
@@ -395,7 +396,7 @@ input[type="checkbox"], input[type="radio"] { accent-color: #1c5ca6; }
     <section class="hero" id="hero">
       <div class="container hero-inner">
         <div class="hero-media" role="img" aria-label="FobFather hero image">
-          <img src="fobfatherlogo.png" alt="FobFather Logo" loading="lazy">
+          <img src="fobfather-logo-3d.png" alt="The FobFather — 3D key fob mascot logo" width="1024" height="1536" fetchpriority="high">
         </div>
       </div>
     </section>
@@ -629,7 +630,7 @@ input[type="checkbox"], input[type="radio"] { accent-color: #1c5ca6; }
 
 <footer class="site-footer">
   <div class="hero-media" role="img" aria-label="FobFather hero image">
-    <img src="fobfatherlogo.png" alt="FobFather Logo" loading="lazy">
+    <img src="fobfather-logo-3d.png" alt="FobFather Logo" loading="lazy">
   </div>
 
   <div class="container footer-row">
