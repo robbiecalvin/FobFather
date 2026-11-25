@@ -20,3 +20,7 @@ python3 -m http.server 8000
 ```
 
 Open [http://localhost:8000](http://localhost:8000) to preview the site and its install button. For on-device installation testing, serve the site over HTTPS. The web app manifest is in `manifest.webmanifest`, the install behavior is in `install.js`, and the app icons are in `icons/`.
+
+## Technical scope and verification
+
+The static site includes a web app manifest, install script and icons. Suggested checks include responsive layouts, manifest resolution, HTTPS installation and appointment-link behavior. Verify on actual supported devices before claiming installation compatibility.
